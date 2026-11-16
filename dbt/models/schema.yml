@@ -1,0 +1,54 @@
+version: 2
+sources:
+  - name: ods
+    schema: korgonbaeva_ods
+    tables:
+      - name: ods_sensors_history
+        columns:
+          - name: event_id
+            tests: [unique, not_null]
+      - name: ods_api_hourly
+      - name: ods_locations_dictionary
+      - name: ods_sensor_status
+        columns:
+          - name: sensor_id
+            tests: [unique, not_null]
+          - name: status
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['active', 'inactive', 'maintenance']
+models:
+  - name: v_measurements_hourly
+    description: PM2.5 hourly values by sensor. Raw archive readings are averaged per local hour.
+    columns:
+      - name: ds
+        tests: [not_null]
+      - name: sensor_id
+        tests: [not_null]
+      - name: value
+        tests: [not_null]
+      - name: location_id
+        description: OpenAQ station identifier for the observed sensor-hour.
+        tests:
+          - not_null
+          - relationships:
+              to: source('ods', 'ods_locations_dictionary')
+              field: location_id
+  - name: dm_daily_air_quality
+    description: One row per Bishkek calendar day with available observations.
+    columns:
+      - name: ds
+        description: Bishkek local day.
+        tests: [unique, not_null]
+      - name: measurement_count
+        description: Sensor-hours with data in the archive or API.
+        tests: [not_null]
+      - name: value_sum
+        description: Sum of observed hourly PM2.5 concentrations.
+      - name: mean_value
+        description: Mean hourly PM2.5 concentration across observed sensor-hours.
+      - name: api_measurement_count
+        description: Observed sensor-hours from the live API.
+      - name: source_count
+        description: Number of data source types present that day.

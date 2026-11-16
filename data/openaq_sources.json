@@ -1,0 +1,112 @@
+{
+  "date_from_local": "2026-09-07",
+  "date_to_exclusive_local": "2026-09-14",
+  "timezone": "Asia/Bishkek",
+  "archive_files": {
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260907.csv.gz": "1d82571d3d3b425242e0cf78dcac3191a5054cd341c22d7159afa310b41d8253",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260908.csv.gz": "e68bdded0a7152025979532a71e334e6f688eb245dd716077fa2038e82a3980c",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260909.csv.gz": "1f19aa7d19d4d63ea92804ddec5c6af0d7bef94f59e86d1f511c4e004ec0eca0",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260910.csv.gz": "1ea06552e067b3d8260dddf89c932ee91b734a6380c3f2e6f7b431cbf9eb94d3",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260911.csv.gz": "4a6caa021f01b5c648d87f8b59d765a21b848412a9b21b1c1617052cf7ece891",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260912.csv.gz": "52c342e7cdd0e146b26887b0c444cf33529bc6abb4db5ad0102116fa2af3ae1b",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197929/year=2026/month=09/location-6197929-20260913.csv.gz": "5fda9cd0a050d3ad9f991b395eca6023ee588bd8f787450a3e2b066fd0110a70",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260907.csv.gz": "574db7c4e64fe1abf4e3e8b3eaa0f06e0c9f6707ecca494cdf8d9f7c4a749e3e",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260908.csv.gz": "8d1678f9c8b84704e3de3bf4cd891d25233ec9184ad1ee8d1d25a91fa9718e5a",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260909.csv.gz": "da129feaefe33f891f37e965ae8cf812f0194b960cba3dba0ffcbccc08cc978c",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260910.csv.gz": "903bd2fdb26fa37a1660cd926df5e3325aca31d0eb01a1ff68fa57377592772f",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260911.csv.gz": "54d5731810c3eccc0d3223efb354c17d3e2028c4df7d9ab323f876e8daf52792",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260912.csv.gz": "81ba04f540306d27045f44cc6d7aea2dbbe446e7c56df4f4a2cd2c678ce25c1b",
+    "https://openaq-data-archive.s3.amazonaws.com/records/csv.gz/locationid=6197961/year=2026/month=09/location-6197961-20260913.csv.gz": "399de3460db49727231559786583253fe8f33ec15ca2c1ca5bfa93de1abb9f87"
+  },
+  "missing_archive_files": [],
+  "locations": [
+    {
+      "id": 6197929,
+      "name": "ул. Киевская, 63 (Министерство экономики)",
+      "sensor_id": 15138119,
+      "source": "archive",
+      "provider": {
+        "id": 166,
+        "name": "Clarity"
+      },
+      "licenses": [
+        {
+          "id": 38,
+          "name": "CC0 1.0",
+          "attribution": {
+            "name": "Clarity",
+            "url": null
+          },
+          "dateFrom": "2021-10-20",
+          "dateTo": null
+        }
+      ]
+    },
+    {
+      "id": 6197961,
+      "name": "Ошский рынок, ул. Киевская / ул. Бейшеналиева",
+      "sensor_id": 15138111,
+      "source": "archive",
+      "provider": {
+        "id": 166,
+        "name": "Clarity"
+      },
+      "licenses": [
+        {
+          "id": 38,
+          "name": "CC0 1.0",
+          "attribution": {
+            "name": "Clarity",
+            "url": null
+          },
+          "dateFrom": "2021-10-20",
+          "dateTo": null
+        }
+      ]
+    },
+    {
+      "id": 6197930,
+      "name": "ул. Жумабека, 180",
+      "sensor_id": 15138127,
+      "source": "api_hours",
+      "provider": {
+        "id": 166,
+        "name": "Clarity"
+      },
+      "licenses": [
+        {
+          "id": 38,
+          "name": "CC0 1.0",
+          "attribution": {
+            "name": "Clarity",
+            "url": null
+          },
+          "dateFrom": "2021-10-20",
+          "dateTo": null
+        }
+      ]
+    },
+    {
+      "id": 6198034,
+      "name": "Парк им. Кемаля Ататюрка",
+      "sensor_id": 15138348,
+      "source": "api_hours",
+      "provider": {
+        "id": 166,
+        "name": "Clarity"
+      },
+      "licenses": [
+        {
+          "id": 38,
+          "name": "CC0 1.0",
+          "attribution": {
+            "name": "Clarity",
+            "url": null
+          },
+          "dateFrom": "2021-10-20",
+          "dateTo": null
+        }
+      ]
+    }
+  ]
+}
